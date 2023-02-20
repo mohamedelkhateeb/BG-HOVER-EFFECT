@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color:black;
+}
+
+span{
+    position: relative;
+    width:49.09px;
+    height:49.09px;
+    display: block;
+    margin: 1px;
+}
+
+span::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(18, 18, 33);
+    transition: 2s;
+    border-radius: 10px;
+}
+
+
+
+span:hover::before{
+    background-color: rgba(210, 187, 12, 0.897);
+    transition: 0s;
+}
